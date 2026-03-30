@@ -20,7 +20,11 @@
 read_markdown<-function(markdown,lower_header=TRUE){
   
   read.delim(text=markdown,sep='|',strip.white=TRUE,skip=2) |>
-    (\(x) x[,2:(ncol(x)-1)])() |>
+    (\(x) if(sum(is.na(x[,1]))==nrow(x)&sum(is.na(x[,ncol(x)]))==nrow(x)) {
+      x[,2:(ncol(x)-1)]
+    } else {
+      x
+    })() |>
     setNames(
       readLines(textConnection(markdown),n=3) |>
         (\(x) x[x!=''][1])() |>
