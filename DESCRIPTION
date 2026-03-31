@@ -1,6 +1,6 @@
-Package: markdownfriend
+Package: readmarkdown
 Title: Provides read_markdown(), a simple function for reading a Markdown table
-Version: 2026.03.30
+Version: 0.1.1
 Authors@R: 
     person(given = 'Yea-Hung', family = 'Chen', 
        email = 'yea-hung.chen@ucsf.edu', role = c('aut','cre'))

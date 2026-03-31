@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_markdown.r
 \name{read_markdown}
 \alias{read_markdown}
-\title{\code{read_markdown()}}
+\title{Reads Markdown tables}
 \usage{
 read_markdown(markdown, lower_header = TRUE)
 }
@@ -15,18 +15,18 @@ read_markdown(markdown, lower_header = TRUE)
 a data.frame
 }
 \description{
-\code{read_markdown()}
+Reads Markdown tables
 }
 \examples{
 # define table
-markdown<-"
-fruit| price
------|-----
-apple|2.05
-pear|1.37
-orange|3.09
+markdown_table<-"
+| state | capital | area |
+| --- | --- | --- |
+| California | Sacramento | 163700 |
+| Massachusetts | Boston | 10565 |
+| Illinois | Springfield | 57914 |
 "
 
 # read table
-read_markdown(markdown)
+read_markdown(markdown_table)
 }

@@ -1,23 +1,23 @@
-#' `read_markdown()`
+#' Reads Markdown tables
 #'
 #' @param markdown a Markdown table
 #' @param lower_header an optional argument controlling whether or not the header should be lowercase 
 #'
-#' @returns a data.frame
+#' @returns a `data.frame`
 #' @export
 #'
 #' @examples
 #' # define table
-#' markdown<-"
-#' fruit| price
-#' -----|-----
-#' apple|2.05
-#' pear|1.37
-#' orange|3.09
+#' markdown_table<-"
+#' | state | capital | area |
+#' | --- | --- | --- |
+#' | California | Sacramento | 163700 |
+#' | Massachusetts | Boston | 10565 |
+#' | Illinois | Springfield | 57914 |
 #' "
 #' 
 #' # read table
-#' read_markdown(markdown)
+#' read_markdown(markdown_table)
 #' @importFrom utils read.delim
 #' @importFrom stats setNames
 read_markdown<-function(markdown,lower_header=TRUE){
