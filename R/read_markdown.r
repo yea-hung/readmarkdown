@@ -32,7 +32,8 @@ read_markdown<-function(markdown,lower_header=TRUE){
       x
     })() |>
     setNames(
-      readLines(textConnection(markdown),n=3) |>
+      markdown |>
+        (\(x) readLines(textConnection(x),n=3))() |>
         (\(x) x[x!=''][1])() |>
         (\(x) gsub('^\\s*\\|','',x))() |>
         (\(x) gsub('\\|\\s*$','',x))() |>
