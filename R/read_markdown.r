@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+#' # define table
 #' markdown<-"
 #' fruit| price
 #' -----|-----
@@ -14,6 +15,8 @@
 #' pear|1.37
 #' orange|3.09
 #' "
+#' 
+#' # read table
 #' read_markdown(markdown)
 #' @importFrom utils read.delim
 #' @importFrom stats setNames
