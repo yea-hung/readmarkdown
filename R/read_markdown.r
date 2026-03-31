@@ -18,6 +18,9 @@
 #' 
 #' # read table
 #' read_markdown(markdown_table)
+#' 
+#' # read table using native piping
+#' markdown_table |> read_markdown()
 #' @importFrom utils read.delim
 #' @importFrom stats setNames
 read_markdown<-function(markdown,lower_header=TRUE){
