@@ -29,6 +29,6 @@ markdown_table<-"
 Load the data:
 
 ```r
-read_markdown(markdown_table)
+tt<-read_markdown(markdown_table)
 ```
 
