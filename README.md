@@ -1,6 +1,6 @@
 ## Installation
 
-To install the package, use `install_github()` from the *remotes* package or `pkg_install()` from the *pak* package:
+To install the package, use `install_github()` from the `remotes` package or `pkg_install()` from the `pak` package:
 
 ```r
 pak::pkg_install('yea-hung/readmarkdown')
