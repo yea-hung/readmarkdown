@@ -1,6 +1,12 @@
 ## Installation
 
-To install the package, use `install_github()` from the `remotes` package or `pkg_install()` from the `pak` package:
+To install the package, use `install_github()` from the `remotes` package:
+
+```r
+remotes::install_github('yea-hung/readmarkdown')
+```
+
+Or, use `pkg_install()` from the `pak` package:
 
 ```r
 pak::pkg_install('yea-hung/readmarkdown')
@@ -11,7 +17,7 @@ pak::pkg_install('yea-hung/readmarkdown')
 Define the Markdown table:
 
 ```r
-markdown_table<-"
+markdown_table <- "
 | state | capital | area |
 | --- | --- | --- |
 | California | Sacramento | 163700 |
@@ -34,4 +40,4 @@ markdown_table |> read_markdown()
 
 ## Details
 
-This package uses base R.
+This package uses base R with native piping.
