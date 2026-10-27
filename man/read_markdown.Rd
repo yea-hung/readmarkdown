@@ -12,7 +12,7 @@ read_markdown(markdown, lower_header = TRUE)
 \item{lower_header}{an optional argument controlling whether or not the header should be lowercase}
 }
 \value{
-a data.frame
+a \code{data.frame}
 }
 \description{
 Reads Markdown tables
@@ -29,4 +29,7 @@ markdown_table<-"
 
 # read table
 read_markdown(markdown_table)
+
+# read table using native piping
+markdown_table |> read_markdown()
 }
